@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-5 mx-auto">
             <h1 class="text-center text-muted mb-3"> Contact form</h1>
-            <p class="text-center text-muted mb-5"> form form form.</p>
+
 
             <form  method="post" action="/formulaire" method="post" class="row g-3" id="contact-form">
 {{-- protège des attaques, post bien envoyé de ce site --}}
