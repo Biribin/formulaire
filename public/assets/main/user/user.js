@@ -52,9 +52,6 @@ $('#submit').click(function()  // lorsque on click sur submit
                                     $('#agreeTerms').addClass('is-valid');
                                     $("#error-agreeTerms").text('');
 
-                                    // if (Formulaire::where('email', $email)->exists()) {
-                                    //     // post with the same slug already exists
-                                    //  }
 
                                     $('#contact-form').submit();
 

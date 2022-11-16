@@ -2,9 +2,9 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormulaireController;
-use Illuminate\Support\Facades\DB;
+
 use App\Models\Formulaire;
-use App\Models\User;
+
 
 
 /*
