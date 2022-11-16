@@ -10,7 +10,7 @@
             <h1 class="text-center text-muted mb-3"> Contact form</h1>
 
 
-            <form  method="post" action="/formulaire" method="post" class="row g-3" id="contact-form">
+            <form  method="post" action="/formulaire" method="post" class="row g-3" id="contact-form" name="contact-form">
 {{-- protège des attaques, post bien envoyé de ce site --}}
                 @csrf
 
@@ -85,13 +85,13 @@
   </div>
 
    <div class="col-12">
-    <input class="form-check-input" type="checkbox" value="" id="agreeTerms">
+    <input class="form-check-input" type="checkbox" value="" name="agreeTerms" id="agreeTerms"  @error('agreeTerms')is-invalid @enderror>
     <label class="form-check-label" for="agreeTerms">Agree Terms</label> <br>
     <small class="text-danger fw-bold" id="error-agreeTerms"> </small>
   </div>
 
   <div class="d-grid gap-2">
-    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    <button type="submit" class="btn btn-primary" name="submit" id="submit">Submit</button>
   </div>
 
 </div>

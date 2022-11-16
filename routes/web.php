@@ -22,7 +22,7 @@ Route::get('/', [HomeController::class, 'home'])-> name('app_home');
 
 Route::get('/about', [HomeController::class, 'about'])-> name('app_about');
 
-Route::get( '/formulaire', [FormulaireController::class, 'Formulaire'])-> name('app_formulaire');
+Route::get( '/formulaire', [FormulaireController::class, 'formulaire'])-> name('app_formulaire');
 
 Route::post('/formulaire',function(){
 
@@ -38,7 +38,7 @@ Route::post('/formulaire',function(){
     $formulaires->save();
     $formulaires=Formulaire::all();
 
-     return view('home.dashboard',compact('formulaires'));
+     return view('auth.formulaire');
 });
 
 

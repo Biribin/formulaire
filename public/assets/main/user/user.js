@@ -22,6 +22,7 @@ $('#submit').click(function()  // lorsque on click sur submit
         $('#email').removeClass('is-invalid');
         $('#email').addClass('is-valid');
 
+
         if(name !="" && /^[a-zA-Z ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçÌÍÎÏìíîïÙÚÛÜùúûüÿÑñ]+$/.test(name)){
             $('#name').removeClass('is-invalid');
             $('#name').addClass('is-valid');
@@ -52,13 +53,14 @@ $('#submit').click(function()  // lorsque on click sur submit
                                     $('#agreeTerms').addClass('is-valid');
                                     $("#error-agreeTerms").text('');
 
-
                                     $('#contact-form').submit();
+
 
                                 }else{
                                     $('#agreeTerms').addClass('is-invalid');
                                     $('#agreeTerms').removeClass('is-valid');
                                     $("#error-agreeTerms").text('you should agree to our  terms and condition');
+
 
                                 }
 
